@@ -5,30 +5,50 @@
  */
 
 body {
-  font-size: 20px;
+  font-size: 18px;
   color: #212529;
   /*font-family: 'Lora', 'Times New Roman', serif;*/
   font-family:'Texta', 'Helvetica Neue', helvetica, sans-serif;
+  font-weight: 300;
 }
 
 p {
   line-height: 1.5;
-  margin: 30px 0;
 }
 
 p a {
-  text-decoration: underline;
+  /*text-decoration: underline;*/
+  color: #508991;
+  font-weight:400;
 }
 
-h1,
+span.highlight {
+  color: #508991;
+  font-weight: 400;
+}
+
+span.title {
+  font-weight: 400;
+}
+
+h1 {
+    font-weight: 800;
+    /*font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;*/
+    font-family: 'Playfair Display'
+}
+
+
 h2,
 h3,
 h4,
 h5,
 h6 {
-  font-weight: 800;
+  font-weight: 400;
+  font-size: 20px;
+  color: #212529;
   /*font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;*/
-  font-family: 'Playfair Display'
+  font-family: 'Texta', 'Helvetica Neue', helvetica, sans-serif;
+  margin: 40px 0 0 0;
 }
 
 a {
@@ -38,7 +58,8 @@ a {
 }
 
 a:focus, a:hover {
-  color: #0085A1;
+  /*color: #0085A1;*/
+  color: #508991;
 }
 
 blockquote {
@@ -220,7 +241,7 @@ header.masthead .overlay {
 header.masthead .page-heading,
 header.masthead .post-heading,
 header.masthead .site-heading {
-  padding: 100px 0 150px;
+  padding: 100px 0 50px;
   color: black;
 }
 
@@ -228,7 +249,7 @@ header.masthead .site-heading {
   header.masthead .page-heading,
   header.masthead .post-heading,
   header.masthead .site-heading {
-    padding: 200px 0;
+    padding: 200px 0 100px 0;
   }
 }
 
@@ -306,7 +327,8 @@ header.masthead .post-heading .meta a {
 
 .post-preview > a:focus, .post-preview > a:hover {
   text-decoration: none;
-  color: #0085A1;
+  /*color: #0085A1;*/
+  color: #508991;;
 }
 
 .post-preview > a > .post-title {
@@ -334,7 +356,8 @@ header.masthead .post-heading .meta a {
 
 .post-preview > .post-meta > a:focus, .post-preview > .post-meta > a:hover {
   text-decoration: underline;
-  color: #0085A1;
+  /*color: #0085A1;*/
+  color: #508991;
 }
 
 @media only screen and (min-width: 768px) {
@@ -405,7 +428,7 @@ form .form-group:first-child .floating-label-form-group {
 }
 
 footer {
-  padding: 50px 0 65px;
+  padding: 100px 0 65px;
 }
 
 footer .list-inline {
@@ -443,4 +466,30 @@ footer .copyright {
 .btn-lg {
   font-size: 16px;
   padding: 25px 35px;
+}
+
+.card.override {
+  border: none;
+}
+
+.card-img-top.img-fluid.override{
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+
+.img-full-width {
+  width: 100%;
+  margin: 20px 0 0 0;
+}
+
+.img-half-width {
+  width: 100%;
+}
+
+.row-buffer {
+  margin-top: 30px;
+}
+
+.p-buffer {
+  margin-top: 20px;
 }
