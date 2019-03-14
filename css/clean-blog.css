@@ -27,10 +27,6 @@ span.highlight {
   font-weight: 400;
 }
 
-span.title {
-  font-weight: 400;
-}
-
 h1 {
     font-weight: 800;
     /*font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;*/
@@ -161,6 +157,9 @@ img::-moz-selection {
     margin: 10px 15px;
     color: #676767;
   }
+  #mainNav .navbar-nav > li.nav-dark > a {
+    color: #ffffff;
+  }
   #mainNav .navbar-nav > li.nav-active > a {
     color: #508991;
   }
@@ -285,7 +284,7 @@ header.masthead .site-heading .subheading {
 }
 
 header.masthead .post-heading h1 {
-  font-size: 35px;
+  font-size: 40px;
 }
 
 header.masthead .post-heading .meta,
@@ -296,8 +295,8 @@ header.masthead .post-heading .subheading {
 
 header.masthead .post-heading .subheading {
   font-size: 24px;
-  font-weight: 600;
-  margin: 10px 0 30px;
+  font-weight: 300;
+  margin: 30px 0 10px;
   font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
@@ -479,17 +478,29 @@ footer .copyright {
 
 .img-full-width {
   width: 100%;
-  margin: 20px 0 0 0;
-}
-
-.img-half-width {
-  width: 100%;
 }
 
 .row-buffer {
   margin-top: 30px;
 }
 
-.p-buffer {
+.twenty-buffer {
   margin-top: 20px;
+}
+
+.p-subtitle {
+  font-weight: 500;
+  margin-bottom: 0px;
+  color: #db5461;
+}
+
+.copyright-text {
+  font-size: 12px;
+  color: #db5461;
+}
+
+.big-quote {
+  font-weight: 300px;
+  font-size: 24;
+  margin: 50px, 0;
 }
