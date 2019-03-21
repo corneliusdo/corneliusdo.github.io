@@ -266,7 +266,7 @@ header.masthead .site-heading h1 {
 
 header.masthead .page-heading .subheading,
 header.masthead .site-heading .subheading {
-  font-size: 24px;
+  font-size: 20px;
   font-weight: 300;
   line-height: 1.1;
   display: block;
@@ -280,6 +280,11 @@ header.masthead .site-heading .subheading {
   header.masthead .page-heading h1,
   header.masthead .site-heading h1 {
     font-size: 80px;
+  }
+
+  header.masthead .page-heading .subheading,
+  header.masthead .site-heading .subheading {
+    font-size: 24px;
   }
 }
 
@@ -466,23 +471,23 @@ footer .copyright {
   font-size: 16px;
   padding: 25px 35px;
 }
+@media only screen and (min-width: 768px) {
+  .card.override {
+    border: none;
+    margin-bottom: 2rem;
+  }
 
-.card.override {
-  border: none;
-  margin-bottom: 2rem;
+  .card-columns.override {
+    column-count: 2;
+    column-gap: 2rem;
+  }
+
+  .card-img-top.img-fluid.override{
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    box-shadow: 10px 10px 25px rgba(122,125,129,0.4);
+  }
 }
-
-.card-columns.override {
-  column-count: 2;
-  column-gap: 2rem;
-}
-
-.card-img-top.img-fluid.override{
-  border-top-left-radius: 0;
-  border-top-right-radius: 0;
-  box-shadow: 10px 10px 25px rgba(122,125,129,0.4);
-}
-
 .img-full-width {
   width: 100%;
 }
