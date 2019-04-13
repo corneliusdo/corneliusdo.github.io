@@ -8,20 +8,20 @@
   <meta name="description" content="">
   <meta name="author" content="">
 
-  <title>Case Study: Beacon - Cornelius Do</title>
+  <title>Video Editing - Cornelius Do</title>
 
   <!-- Bootstrap core CSS -->
-  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
   <!-- Custom fonts for this template -->
-  <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+  <link href="../vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
   <link href='https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
   <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
 
   <!-- Custom styles for this template -->
   <!--<link href="css/clean-blog.min.css" rel="stylesheet">-->
-  <link href="css/clean-blog.css" rel="stylesheet">
-  <link rel='shortcut icon' type='image/x-icon' href="favicon.ico"/>
+  <link href="../css/clean-blog.css" rel="stylesheet">
+  <link rel='shortcut icon' type='image/x-icon' href="../favicon.ico"/>
 
 </head>
 
@@ -38,13 +38,13 @@
       <div class="collapse navbar-collapse" id="navbarResponsive">
         <ul class="navbar-nav ml-auto">
           <li class="nav-item">
-            <a class="nav-link" href="about.html">About</a>
+            <a class="nav-link" href="../about.html">About</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="index.html">Work</a>
+            <a class="nav-link" href="../index.html">Work</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="not-work.html">Not Work</a>
+            <a class="nav-link" href="index.html">Not Work</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="https://drive.google.com/open?id=1yhe2BOiILi55V2h64ccf8GqhuvxvJpjW" target="_blank">Resume</a>
@@ -60,9 +60,8 @@
       <div class="row">
         <div class="col-lg col-md col-sm mx-auto">
           <div class="post-heading">
-            <h1>Beacon, the fire-spotting web app</h1>
-            <span class="subheading">3rd place at NASA Spaceapps, Sydney, 2018</span>
-            <p>Team Members: <a href="https://www.linkedin.com/in/janet-mao-b7902067/">Janet Mao</a>, <a href="https://www.linkedin.com/in/morgan-xu-26721069/">Morgan Xu</a>, <a href="https://www.linkedin.com/in/dongleo/">Leo Dong</a> & myself.</p>
+            <h1>Videos & Comedy</h1>
+            <span class="subheading">I love creating short videos with a comedic kick.</span>
           </div>
         </div>
       </div>
@@ -73,11 +72,19 @@
   <article>
     <div class="container">
       <div class="row">
-        <div class="col-lg-3 col-md col-sm mx-auto">
+        <div class="col-lg-3 col-md-4 mx-auto">
           <p class="p-subtitle">Overview</p>
         </div>
-        <div class="col-lg-9 col-md mx-auto">
-          <p>Over 2 days, we were tasked to design and build a crowdsourcing tool for citizens to contribute to early detection, verification, tracking, visualization, and notification of wildfires.</p>
+        <div class="col-lg-9 col-md-8 mx-auto">
+          <iframe width="100%" height="100%"
+            src="https://www.youtube.com/embed/Nd-aWJOxIks">
+          </iframe>
+          <iframe width="100%" height="100%"
+            src="https://www.youtube.com/embed/zj9RvF0hL7I">
+          </iframe>
+          <iframe width="100%" height="100%"
+            src="https://www.youtube.com/embed/w57oUeVWD7I">
+          </iframe>
         </div>
       </div>
       <div class="row row-buffer">
@@ -92,7 +99,7 @@
             <li>A way for users to contribute to fire detection through crowdsourcing</li>
             <li>Simple onboarding for users to start receiving alerts</li>
           </ul>
-          <img class="img-full-width" src="img/beacon/beacon-screens-1.png" alt="Beacon Screens 1">
+          <img class="img-full-width" src="img/beacon-screens-1.png" alt="Beacon Screens 1">
         </div>
       </div>
       <div class="row row-buffer">
@@ -115,23 +122,21 @@
           </div>
           <div class="col-lg-9 col-md col-sm mx-auto">
           <p><strong>Experience Flow:</strong> The most important to answer for users was "is there a fire?". The flow then had to cater for users providing feedback to the system.</p>
-          <img class="img-full-width" src="img/beacon/beacon-experience-flow.png" alt="Beacon Experience Flow">
+          <img class="img-full-width" src="img/beacon-experience-flow.png" alt="Beacon Experience Flow">
 
           <p class="row-buffer"><strong>Mobile First:</strong> A mobile-responsive website would provide the most value to users because it provides a low barrier to entry when time is a valuable but scarce resource in reacting to a nearby fire. We focused on the responsive view due to time constraints.</p>
 
-          <p><strong>Accessible:</strong> Focusing on responsive web was also an intentional inclusive design decision to cater for users living in remote areas (e.g. non-suburban areas) where fires are more common. Notifications would be served using a text delivery service. We believed that a stand-alone mobile app would've hindered adoption.</p>
-          <p>People are often unprepared for fast moving bushfires. An easy to remember, quick to access, mobile optimised website would provide the most value to users who have only a few minutes to act.</p>
-          <img class="img-full-width" src="img/beacon/beacon-push.png" alt="Beacon Push Notifications">
+          <p><strong>Accessible:</strong> Focusing on responsive web was also an intentional inclusive design decision to ensure users living in remote areas could also benefit as fires are more common in non-suburban areas. Notifications would be served using a text delivery service. We believed that a stand-alone mobile app would've hindered adoption.</p>
+
+          <img class="img-full-width" src="img/beacon-fire.png" alt="Beacon Fire Results Pages">
 
           <p class="row-buffer"><strong>Multiple Data Sources:</strong> To allow users to make informed decisions, the result screens combine satellite data, user reported data and wind direction:
             <ul>
               <li>The NASA API satellite data only provides a rough guide to the fire's location and size</li>
-              <li>Adding visual indicators for users who have seen the fire provides users with an aid in estimating where the fire is and how serious it is</li>
+              <li>Adding in anchors for users who have seen the fire provides users with visuals that aid in estimating where the fire is and how serious it is</li>
               <li>Adding wind direction allows users to make an informed decision about which direction to flee the fire</li>
             </ul>
           </p>
-
-          <img class="img-full-width" src="img/beacon/beacon-fire.png" alt="Beacon Fire Results Pages">
         </div>
       </div>
       <div class="row row-buffer">
@@ -140,7 +145,7 @@
           </div>
           <div class="col-lg-9 col-md col-sm mx-auto">
           <p>We didn't see that one coming...</p>
-          <img class="img-full-width" src="img/beacon/beacon-our-team.jpg" alt="Cornelius Do">
+          <img class="img-full-width" src="img/beacon-our-team.jpg" alt="Cornelius Do">
         </div>
       </div>
     </div>
