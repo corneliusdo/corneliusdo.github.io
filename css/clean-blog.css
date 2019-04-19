@@ -268,6 +268,10 @@ header.masthead .site-heading {
   header.masthead .site-heading {
     padding: 200px 0 100px 0;
   }
+  header.masthead .post-heading.override {
+    padding: 100px 0 50px 0;
+  }
+
 }
 
 header.masthead .page-heading,
@@ -525,7 +529,7 @@ footer .copyright {
 
 .p-subtitle {
   font-weight: 500;
-  margin-bottom: 0px;
+  margin-bottom: 5px;
   color: #db5461;
 }
 
@@ -535,8 +539,15 @@ footer .copyright {
 }
 
 .big-quote {
-  font-weight: 300px;
-  font-size: 24;
-  margin: 50px, 0;
+  font-weight: 500px;
+  font-size: 24px;
+  padding: 100px 0px;
   text-align: center;
+  color: #ffffff;
+}
+
+.container-fluid.override {
+  padding-right: 0px;
+  padding-left: 0px;
+  margin-bottom: 60px;
 }
