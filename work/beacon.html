@@ -74,7 +74,7 @@
     <div class="container">
       <div class="row">
         <div class="col-lg-3 col-md col-sm mx-auto">
-          <p class="p-subtitle">Overview</p>
+          <p class="p-subtitle">Context</p>
         </div>
         <div class="col-lg-9 col-md mx-auto">
           <p>Over 2 days, we were tasked to design and build a crowdsourcing tool for citizens to contribute to early detection, verification, tracking, visualization, and notification of wildfires.</p>
@@ -95,38 +95,46 @@
           <img class="img-full-width" src="../img/beacon-app/beacon-screens-1.png" alt="Beacon Screens 1">
         </div>
       </div>
+      <hr class="rgba-white-light" style="margin: 5% 0;">
       <div class="row row-buffer">
           <div class="col-lg-3 col-md col-sm mx-auto">
-            <p class="p-subtitle">My thought process</p>
+            <p class="p-subtitle">Problem Space</p>
           </div>
           <div class="col-lg-9 col-md col-sm mx-auto">
-          <p><strong>Users:</strong> Our efforts were focused on high-risk users. These were people living in areas prone to large fires and could find themselves in need of quick evacuation.</p>
+          <p><strong>High risk users</strong><br>We chose to focus on people living in country because these areas are often underserved, prone to large bushfires and evacuation scenarios are often life or death.</p>
 
-          <p><strong>Problem Space:</strong> Bushfires and wildfires are often unpredictable, fast moving and poorly understood. People underestimate how long a fire takes to reach them and once it does, it is difficult to tell which direction it's spreading in. This is life threatening and has lead to people's deaths.</p>
+          <p><strong>Fires are tricky</strong><br>Bushfires and wildfires are often unpredictable, fast moving and poorly understood. People underestimate how long a fire takes to reach them and once it does, it is difficult to tell which direction it's spreading in. This is life threatening and has lead to people's deaths.</p>
 
-          <p><strong>Goals:</strong> Provide information (movement, direction and intensity) about the fire backed by social proof to enable users to make informed decisions about how to react to the fire.</p>
-
-          <p><strong>Process:</strong> Bushfires and wildfires are often unpredictable, fast moving and poorly understood. People underestimate how long a fire takes to reach them and once it does, it is difficult to tell which direction it's spreading in. This is life threatening and has lead to people's deaths.</p>
+          <p><strong>People don't make good decisions in crises</strong><br>Bushfires don't just threaten lives, they threaten the property and sense of history that is attached to houses and belongings. Although illogical, people often make the decision to stay put rather than leave for safety. As such, the solution needed a way to work around this bias, but not subvert control from users.</p>
         </div>
       </div>
+    </div>
+    <div class="container-fluid override" style="background-image: url(../img/beacon-app/beacon-page-break.jpg);">
+      <div class="row row-buffer">
+        <div class="col-lg-8 col-md col-sm mx-auto">
+          <p class="big-quote"><strong>Our Goal</strong><br>Enable users to make informed decisions about how to react a the fire by providing fire direction and intensity information backed by social proof.</p>
+        </div>
+      </div>
+    </div>
+    <div class="container">
       <div class="row row-buffer">
           <div class="col-lg-3 col-md col-sm mx-auto">
             <p class="p-subtitle">Design Rationale</p>
           </div>
           <div class="col-lg-9 col-md col-sm mx-auto">
-          <p><strong>Experience Flow:</strong> The most important to answer for users was "is there a fire?". The flow then had to cater for users providing feedback to the system.</p>
+          <p><strong>Experience Flow</strong><br>The most important to answer for users was "is there a fire?". The flow then had to cater for users providing feedback to the system.</p>
           <img class="img-full-width" src="../img/beacon-app/beacon-experience-flow.png" alt="Beacon Experience Flow">
 
-          <p class="row-buffer"><strong>Mobile First:</strong> A mobile-responsive website would provide the most value to users because it provides a low barrier to entry when time is a valuable but scarce resource in reacting to a nearby fire. We focused on the responsive view due to time constraints.</p>
+          <p class="row-buffer"><strong>Mobile First</strong><br>A mobile-responsive website would provide the most value to users because it provides a low barrier to entry when time is a valuable but scarce resource in reacting to a nearby fire. We focused on the responsive view due to time constraints.</p>
 
-          <p><strong>Accessible:</strong> Focusing on responsive web was also an intentional inclusive design decision to cater for users living in remote areas (e.g. non-suburban areas) where fires are more common. Notifications would be served using a text delivery service. We believed that a stand-alone mobile app would've hindered adoption.</p>
+          <p><strong>Accessible</strong><br>Focusing on responsive web was also an intentional inclusive design decision to cater for users living in remote areas (e.g. non-suburban areas) where fires are more common. Notifications would be served using a text delivery service. We believed that a stand-alone mobile app would've hindered adoption.</p>
           <p>People are often unprepared for fast moving bushfires. An easy to remember, quick to access, mobile optimised website would provide the most value to users who have only a few minutes to act.</p>
           <img class="img-full-width" src="../img/beacon-app/beacon-push.png" alt="Beacon Push Notifications">
 
-          <p class="row-buffer"><strong>Multiple Data Sources:</strong> To allow users to make informed decisions, the result screens combine satellite data, user reported data and wind direction:
+          <p class="row-buffer"><strong>Multiple Data Sources</strong><br>To allow users to make informed decisions, the result screens combine satellite data, user reported data and wind direction:
             <ul>
-              <li>The NASA API satellite data only provides a rough guide to the fire's location and size</li>
-              <li>Adding visual indicators for users who have seen the fire provides users with an aid in estimating where the fire is and how serious it is</li>
+              <li>The NASA API satellite data (the red squres) only provides a rough guide to the fire's location and size</li>
+              <li>Adding visual anchors (the red dots) that indicate users who have seen the fire provides other users with an aid in estimating where the fire is and how serious it is</li>
               <li>Adding wind direction allows users to make an informed decision about which direction to flee the fire</li>
             </ul>
           </p>
