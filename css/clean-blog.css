@@ -7,12 +7,16 @@
 body {
   font-size: 18px;
   color: #212529;
-  font-family: 'Helvetica Neue', helvetica, sans-serif;
+  font-family:'Texta', 'Helvetica Neue', helvetica, sans-serif;
   font-weight: 300;
 }
 
 p {
   line-height: 1.5;
+}
+
+strong, b {
+  font-weight:400;
 }
 
 p a {
