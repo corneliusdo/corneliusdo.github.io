@@ -12,11 +12,10 @@ body {
 }
 
 p {
-  line-height: 1.5;
+  line-height: 30px;
 }
 
 p a {
-  /*text-decoration: underline;*/
   color: #508991;
   font-weight:400;
 }
@@ -28,13 +27,22 @@ span.highlight {
 
 h1 {
     font-weight: 800;
-    font-family: 'Playfair Display', , serif
+    font-family: 'Playfair Display', serif
 }
 
-h2,
+h2{
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 32px;
+  color: #212529;
+  font-family: 'Roboto', 'Helvetica', sans-serif;
+  margin-bottom: 0;
+}
+
 h3 {
   font-weight: 400;
   font-size: 20px;
+  line-height: 24px;
   color: #212529;
   font-family: 'Roboto', 'Helvetica', sans-serif;
   margin: 40px 0 0 0;
@@ -43,6 +51,7 @@ h3 {
 h4{
   font-weight: 400;
   font-size: 20px;
+  line-height: 24px;
   color: #212529;
   font-family: 'Roboto', 'Helvetica', sans-serif;
 }
@@ -56,10 +65,9 @@ h5 {
 }
 
 h6 {
-  font-size: 80%;
-  font-weight: 400;
-  line-height: 1.5;
-  color: #6c757d!important;
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 24px;
 }
 
 a {
@@ -68,10 +76,21 @@ a {
   transition: all 0.2s;
 }
 
+/* ----- Hover states ----- */
+.case-study:hover {
+  color: #212529;
+}
+
+.case-study:focus {
+  color: #212529;
+}
+
 a:focus, a:hover {
   /*color: #0085A1;*/
   color: #508991;
+  /*text-decoration: none;   -- Usually would remove underline, but this is not accessible -- */
 }
+
 
 blockquote {
   font-style: italic;
@@ -93,6 +112,15 @@ blockquote {
   text-align: center;
   border-bottom-right-radius: 5px;
   border-bottom-left-radius: 5px;
+}
+
+.subtext {
+  font-size: 14px;
+  display: block;
+  color: #676767;
+  font-weight: 400;
+  line-height: 16px;
+  margin-bottom: 16px;
 }
 
 ::-moz-selection {
@@ -130,9 +158,10 @@ img::-moz-selection {
   font-family:'Roboto', 'Helvetica', sans-serif;
 }
 
+/* Navbar brand for mobile:*/
 #mainNav .navbar-brand {
-  font-size: 32px;
-  color: #000000;
+  font-size: 18px;
+  color: #212529;
   font-weight: 800;
   font-family: 'Playfair Display'
 }
@@ -158,6 +187,7 @@ img::-moz-selection {
   color: #508991;
 }
 
+/* Desktop menu styling combined with bootstrap external*/
 @media only screen and (min-width: 992px) {
   #mainNav {
     border-bottom: 1px solid transparent;
@@ -165,8 +195,8 @@ img::-moz-selection {
   }
   #mainNav .navbar-brand {
     padding: 10px 20px 10px 0px;
-    font-size: 32px;
-    color: #000000;
+    font-size: 24px;
+    color: #212529;
     font-weight: 800;
     font-family: 'Playfair Display'
   }
@@ -192,7 +222,7 @@ img::-moz-selection {
     text-underline-position: under;*/
   }
 }
-/* Section responsible for scrolling header */
+/* ------ Section responsible for scrolling header ------ */
 /*@media only screen and (min-width: 992px) {
   #mainNav {
     -webkit-transition: background-color 0.2s;
@@ -237,7 +267,7 @@ img::-moz-selection {
 }
 */
 header.masthead {
-  margin: 50px 0px 50px 0px;
+  margin: 30px 0px 30px 0px;
   background: no-repeat center center;
   /*background-color: #868e96;*/
   background-color: #ffffff;
@@ -263,11 +293,11 @@ header.masthead .site-heading {
   color: black;
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 992px) {
   header.masthead .page-heading,
   header.masthead .post-heading,
   header.masthead .site-heading {
-    padding: 200px 0 100px 0;
+    padding: 150px 0 70px 0;
   }
   header.masthead .post-heading.override {
     padding: 100px 0 50px 0;
@@ -286,7 +316,8 @@ header.masthead .maintext {
 
 header.masthead .page-heading h1,
 header.masthead .site-heading h1 {
-  font-size: 50px;
+  font-size: 32px;
+  line-height: 40px;
   margin-top: 0;
   margin-bottom: 2rem;
 }
@@ -295,7 +326,7 @@ header.masthead .page-heading .subheading,
 header.masthead .site-heading .subheading {
   font-size: 20px;
   font-weight: 300;
-  line-height: 1.1;
+  line-height: 32px;
   display: block;
   color: #676767;
   margin: 10px 0 0;
@@ -303,7 +334,7 @@ header.masthead .site-heading .subheading {
   font-family: 'Roboto', 'Helvetica', sans-serif;
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 992px) {
   header.masthead .page-heading h1,
   header.masthead .site-heading h1 {
     font-size: 80px;
@@ -312,23 +343,29 @@ header.masthead .site-heading .subheading {
   header.masthead .page-heading .subheading,
   header.masthead .site-heading .subheading {
     font-size: 24px;
+    line-height: 32px;
   }
 }
 
 header.masthead .post-heading h1 {
-  font-size: 40px;
+  font-size: 32px;
+  line-height: 40px;
+  font-family: 'Playfair Display', serif;
 }
 
 header.masthead .post-heading .meta,
 header.masthead .post-heading .subheading {
-  line-height: 1.1;
+  font-size: 24px;
+  line-height: 32px;
+  color: #676767;
   display: block;
 }
 
 header.masthead .post-heading .subheading {
   font-size: 24px;
+  line-height: 32px;
   font-weight: 300;
-  margin: 30px 0 10px;
+  margin: 24px 0 24px;
   font-family: 'Roboto', 'Helvetica', Arial, sans-serif;
 }
 
@@ -343,12 +380,16 @@ header.masthead .post-heading .meta a {
   color: #fff;
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 992px) {
   header.masthead .post-heading h1 {
-    font-size: 55px;
+    font-size: 40px;
+    line-height: 48px;
+    font-family: 'Playfair Display', serif
   }
   header.masthead .post-heading .subheading {
-    font-size: 30px;
+    font-size: 24px;
+    line-height: 32px;
+    color: #676767;
   }
 }
 
@@ -391,7 +432,7 @@ header.masthead .post-heading .meta a {
   color: #508991;
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 992px) {
   .post-preview > a > .post-title {
     font-size: 36px;
   }
@@ -498,24 +539,53 @@ footer .copyright {
   font-size: 16px;
   padding: 25px 35px;
 }
-@media only screen and (min-width: 768px) {
-  .card.override {
-    border: none;
-    margin-bottom: 2rem;
-    box-shadow: 10px 10px 25px rgba(122,125,129,0.4);
-  }
+
+/* ------- Home page styling ------- */
+.card-columns.override {
+  column-count: 1;
+  column-gap: 2rem;
+}
+
+.card.override {
+  border: none;
+  border-radius:16px;
+  /*padding: 32px 24px 24px 24px;*/
+  margin-top: 16px;
+  box-shadow: 10px 10px 25px rgba(122,125,129,0.4);
+  background-color:#FFFFFF;
+}
+
+.card-logo {
+  width: 80%;
+}
+
+.column-30 {
+   float: left;
+   width: 30%;
+   column-gap: 24px;
+}
+
+.column-70 {
+   float: left;
+   width: 70%;
+   column-gap: 24px;
+}
+
+.card-img-top.img-fluid.override{
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+  /*box-shadow: 10px 10px 25px rgba(122,125,129,0.4);*/
+}
+
+/* ------- Home page styling specific for desktop ------- */
+@media only screen and (min-width: 992px) {
 
   .card-columns.override {
     column-count: 2;
     column-gap: 2rem;
   }
-
-  .card-img-top.img-fluid.override{
-    border-top-left-radius: 0;
-    border-top-right-radius: 0;
-    /*box-shadow: 10px 10px 25px rgba(122,125,129,0.4);*/
-  }
 }
+
 .img-full-width {
   width: 100%;
 }
